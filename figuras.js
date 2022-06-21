@@ -1,6 +1,6 @@
 //codigo del cuadrado
 
-function perimetroCuadrado(){
+function perimetroCuadrado(l){
     return l*4;
 }
 function areaCuadrado(l){
@@ -34,5 +34,11 @@ function areaCirculo(radio){
 function CalcularAreaCuadrado(){
     var area = areaCuadrado(document.getElementById("inputCuadrado").value);
     var result = "El resultado es: "+area;
+    document.getElementById("resultado").textContent = result;
+}
+
+function CalcularPerimetroCuadrado(){
+    var perimetro = perimetroCuadrado(document.getElementById("inputCuadrado").value);
+    var result = "El resultado es: "+perimetro;
     document.getElementById("resultado").textContent = result;
 }
